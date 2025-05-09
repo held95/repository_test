@@ -3,5 +3,5 @@ services:
     name: api-flask-helder
     env: python
     plan: free
-    buildCommand: ""
-    startCommand: python app.py
+    buildCommand: "cd meu-backend && pip install -r requirements.txt"
+    startCommand: "cd meu-backend && gunicorn app:app"
