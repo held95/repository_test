@@ -1,7 +1,6 @@
 services:
   - type: web
-    name: api-flask-helder
+    name: flask-api
     env: python
-    plan: free
-    buildCommand: ""
-    startCommand: python app.py
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && python app.py"
