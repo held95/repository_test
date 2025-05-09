@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: api-flask-helder
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
